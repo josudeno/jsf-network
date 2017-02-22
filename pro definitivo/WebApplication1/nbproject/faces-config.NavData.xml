@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="personas/Create.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="empresas/Create.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="Puestos.jsp" x="650" y="450" zoom="true"/>
+        <Node id="index.xhtml" x="114" y="36" zoom="true"/>
+        <Node id="template.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="personas/List.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="trabajos/Edit.xhtml" x="150" y="1050" zoom="true"/>
+        <Node id="usuarios/Edit.xhtml" x="546" y="211" zoom="true"/>
+        <Node id="EditarProf.jsp" x="900" y="300" zoom="true"/>
+        <Node id="puestos/Create.xhtml" x="400" y="900" zoom="true"/>
+        <Node id="puestos/List.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="PagProfesional.jsp" x="8" y="119" zoom="true"/>
+        <Node id="BuscarTrabajo.jsp" x="1650" y="300" zoom="true"/>
+        <Node id="personas/Edit.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="usuarios/List.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="profesionales/List.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="PagEmpresa.jsp" x="1650" y="150" zoom="true"/>
+        <Node id="NewPuesto.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="personas/View.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="profesionales/View.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="empresas/List.xhtml" x="900" y="600" zoom="true"/>
+        <Node id="trabajos/View.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="RegistroEmp.xhtml" x="1400" y="450" zoom="true"/>
+        <Node id="profesionales/Edit.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="empresas/View.xhtml" x="650" y="750" zoom="true"/>
+        <Node id="welcomeJSF.jsp" x="1400" y="300" zoom="true"/>
+        <Node id="puestos/Edit.xhtml" x="650" y="600" zoom="true"/>
+        <Node id="usuarios/Create.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="usuarios/View.xhtml" x="150" y="900" zoom="true"/>
+        <Node id="profesionales/Create.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="puestos/View.xhtml" x="1900" y="150" zoom="true"/>
+        <Node id="trabajos/List.xhtml" x="400" y="750" zoom="true"/>
+        <Node id="trabajos/Create.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="empresas/Edit.xhtml" x="1150" y="150" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditEmpresasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditEmpresasLabel_razon}" for="razon" />
+                    <h:inputText id="razon" value="#{empresasController.selected.razon}" title="#{bundle.EditEmpresasTitle_razon}" required="true" requiredMessage="#{bundle.EditEmpresasRequiredMessage_razon}"/>
+                    <h:outputLabel value="#{bundle.EditEmpresasLabel_area}" for="area" />
+                    <h:inputText id="area" value="#{empresasController.selected.area}" title="#{bundle.EditEmpresasTitle_area}" required="true" requiredMessage="#{bundle.EditEmpresasRequiredMessage_area}"/>
+                    <h:outputLabel value="#{bundle.EditEmpresasLabel_cuit}" for="cuit" />
+                    <h:inputText id="cuit" value="#{empresasController.selected.cuit}" title="#{bundle.EditEmpresasTitle_cuit}" required="true" requiredMessage="#{bundle.EditEmpresasRequiredMessage_cuit}"/>
+                    <h:outputLabel value="#{bundle.EditEmpresasLabel_idPersona}" for="idPersona" />
+                    <h:inputText id="idPersona" value="#{empresasController.selected.idPersona}" title="#{bundle.EditEmpresasTitle_idPersona}" required="true" requiredMessage="#{bundle.EditEmpresasRequiredMessage_idPersona}"/>
+                </h:panelGrid>
+                <h:commandLink action="#{empresasController.update}" value="#{bundle.EditEmpresasSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditEmpresasViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{empresasController.prepareList}" value="#{bundle.EditEmpresasShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditEmpresasIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,208 @@
+
+.botVolver
+{
+    background-image: url(imagenes/botVolver.png);
+    width: 95px;
+    height: 25px;
+}
+.tablainicio
+{
+    top: 1px;
+    left: 25cm;
+    position: absolute;
+}
+.tablavolver
+{
+    top: 8.5cm;
+    left: 24cm;
+    position: absolute;
+}
+.imagen
+{
+    width:150px; 
+    border:0 ;
+    position: absolute;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    top: 3cm;
+    border-right-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: silver;
+    border-left-color: silver;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    text-align: left;
+    height: 100px;
+}
+body
+{
+    
+    background-image: url(imagenes/degra.gif);
+    color: blue;
+}
+.tabinfo
+{
+    
+    position: absolute;
+    top: 3cm;
+    left: 7cm;
+    height: 5cm;
+    width: 20cm;
+}
+.top
+{
+    
+    background-color: silver;
+ 
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    width: 25cm;
+    position: absolute;
+    left: 1px;
+    height: 1.5cm;
+    top: 24px;
+}
+.div1
+{
+    overflow:scroll;
+    width: 27.9cm;
+    height: 30cm;
+}
+.top2
+{
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    background-color: #cccccc;
+    position: absolute;
+    width: 27cm;
+    top: 48px;
+    height: 1.2cm;
+    font-family: Arial;
+    left: 12px;
+    font-size: 12pt;
+}
+.puestos
+{
+    position: absolute;
+    width: 26cm;
+    height: 5cm;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: silver;
+    border-left-color: silver;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    font-family: Arial;
+    font-size: 8pt;
+    text-align: center;
+    left: 1cm;
+    top: 8.5cm;
+}
+
+
+
+table {
+    empty-cells: show;
+}
+
+form.jsfcrud_list_form th, td th {
+    font-size: x-small;
+    color: #4e6a71;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #90b4bd;
+    border-right-color: #90b4bd;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #b2d5d6;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 8px;
+    font-size: small;
+}
+
+form.jsfcrud_list_form td, td td {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #b2d5d6;
+    border-right-color: #b2d5d6;
+    vertical-align: baseline;
+    padding-bottom: 0px;
+}
+
+tr.jsfcrud_odd_row {
+    background-color: #fefeff;
+    color: #4e6a71;
+}
+
+
+tr.jsfcrud_even_row {
+    background-color: #eff5fa;
+    color: #4e6a71;
+}
+.header
+{
+    
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 12px;
+    text-align: center;
+}
+h8
+{
+ 
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 10px;
+    position: absolute;
+    top: 1px;
+    left: 20cm;
+}
+.botinicio
+{
+    
+    background-image: url(imagenes/botInicio.png);
+    width: 90px;
+    height: 25px;
+}

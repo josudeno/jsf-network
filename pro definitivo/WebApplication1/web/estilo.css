@@ -1,0 +1,141 @@
+.botCancelar
+{
+    width:95px;
+    height: 25px;
+    background-image: url(imagenes/botCancelar.png);
+}
+.botGuardar
+{
+    width:95px;
+    height: 25px;
+    background-image: url(imagenes/botGuardar.png);
+}
+.newpuesto
+{
+    
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12pt;
+    position: absolute;
+    top: 3cm;
+    left: 5cm;
+    width: 8cm;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-align: left;
+}
+    body 
+    {
+
+        background-color: #cccccc;
+        font-family: 'Lucida Sans Unicode';
+        font-size: 12pt;
+        color: orange;
+        background-image: url(imagenes/degra.gif);
+    }
+    .bot
+    {
+       width:70px;
+       height: 25px;
+       text-indent:-9999px;
+       overflow:hidden; /* Oculatando el texto del enlace */
+       display:block;
+       background-image: url(imagenes/botoningresar.png);
+    }
+    .boton
+    {
+       width:90px;
+       height: 25px;
+       text-indent:-9999px;
+       overflow:hidden; /* Oculatando el texto del enlace */
+       display:block;
+       background-image: url(imagenes/botonregistrarse.png);
+    }
+    .boton:hover
+    {
+        width:90px;
+        height:25px;
+        background-image: url(imagenes/botonregistrarse2.png);
+    }
+    label{
+        font-family: Arial,Helvetica,sans-serif;
+        color: #000099;
+        font-size: 10pt;
+        background-position: right;
+    }
+
+    .tab
+    {
+        text-align: left;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 12pt;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-top-color: #000000;
+        position: absolute;
+        top: 5cm;
+
+        left: 2cm;
+    }
+    .tab2
+    {
+        
+        bottom: 0.7cm;
+        position: absolute;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 10pt;
+        left: 7.8cm;
+}
+    .tablogin
+    {
+        
+        top: 3cm;
+        position: absolute;
+        left: 16cm;
+}
+    
+    label2
+    {
+        
+        font-size: 10pt;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+    h5
+    {
+        
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 14pt;
+        top: 3cm;
+        position: absolute;
+        left: 2cm;
+    }
+    h1
+    {
+        
+        letter-spacing: 3px;
+}
+.tabprof
+{
+      text-align: left;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 12pt;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-top-color: #000000;
+        position: fixed;
+        top: 10cm;
+
+        left: 2cm;
+}
+.tabAntec
+{
+    
+    position: absolute;
+    top: 6cm;
+    left: 16cm;
+}
+.div1
+{
+    visibility:hidden;
+}

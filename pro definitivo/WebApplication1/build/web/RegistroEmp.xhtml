@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+    <head>
+        <title>Empresa</title>
+        <LINK href="estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Bienvenido a pro</h1>
+        <h:form>
+            <h5>Sea parte de nuestra comunidad de Empresas</h5>
+            <table class="tab">
+                <tr> 
+                    <th><label>Razon social</label> </th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese razon" value="#{regController.empresa.razon}"/> </th>
+                </tr> 
+                <tr>
+                    <th><label>C.U.I.T </label></th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese cuit" value="#{regController.empresa.cuit}">
+                        <f:converter converterId="javax.faces.Double"/> </h:inputText></th> 
+                </tr>
+                <tr>
+                    <th><label>Correo electronico</label></th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese correo" value="#{regController.usuario.correo}"/></th> 
+                </tr>
+                <tr>
+                    <th><label>Area/Rubro</label></th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese area" value="#{regController.empresa.area}"/></th> 
+                </tr>
+                  <tr>
+                    <th><label>Contraseña</label></th>
+                    <th><h:inputSecret immediate="true" required="true" requiredMessage="ingrese contraseña" value="#{regController.usuario.contrasena}"/></th> 
+                </tr>
+                 <tr>
+                    <th><label>Descripcion</label></th>
+                    <th><h:inputTextarea value="#{regController.empresa.descripcion}"/></th> 
+                </tr>
+                <tr>
+                    <th> <h:commandButton  styleClass="boton" type="submit" action="#{regController.create}"/></th>
+                </tr>
+            </table>
+            <table class="tab2">
+                <tr><th>
+                    <a href="faces/index.xhtml">Volver</a> 
+                </th></tr>
+            </table>
+        </h:form>
+    </body>
+        </f:view>
+</html>
+

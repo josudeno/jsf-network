@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditPuestosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_idPuesto}" for="idPuesto" />
+                    <h:inputText id="idPuesto" value="#{puestosController.selected.idPuesto}" title="#{bundle.EditPuestosTitle_idPuesto}" required="true" requiredMessage="#{bundle.EditPuestosRequiredMessage_idPuesto}"/>
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_puesto}" for="puesto" />
+                    <h:inputText id="puesto" value="#{puestosController.selected.puesto}" title="#{bundle.EditPuestosTitle_puesto}" required="true" requiredMessage="#{bundle.EditPuestosRequiredMessage_puesto}"/>
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_area}" for="area" />
+                    <h:inputText id="area" value="#{puestosController.selected.area}" title="#{bundle.EditPuestosTitle_area}" required="true" requiredMessage="#{bundle.EditPuestosRequiredMessage_area}"/>
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_salario}" for="salario" />
+                    <h:inputText id="salario" value="#{puestosController.selected.salario}" title="#{bundle.EditPuestosTitle_salario}" />
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_fecha}" for="fecha" />
+                    <h:inputText id="fecha" value="#{puestosController.selected.fecha}" title="#{bundle.EditPuestosTitle_fecha}" required="true" requiredMessage="#{bundle.EditPuestosRequiredMessage_fecha}">
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_descripcion}" for="descripcion" />
+                    <h:inputTextarea rows="4" cols="30" id="descripcion" value="#{puestosController.selected.descripcion}" title="#{bundle.EditPuestosTitle_descripcion}" />
+                    <h:outputLabel value="#{bundle.EditPuestosLabel_idEmpresa}" for="idEmpresa" />
+                    <h:selectOneMenu id="idEmpresa" value="#{puestosController.selected.idEmpresa}" title="#{bundle.EditPuestosTitle_idEmpresa}" required="true" requiredMessage="#{bundle.EditPuestosRequiredMessage_idEmpresa}">
+                        <f:selectItems value="#{puestosController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{puestosController.update}" value="#{bundle.EditPuestosSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditPuestosViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{puestosController.prepareList}" value="#{bundle.EditPuestosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditPuestosIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

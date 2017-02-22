@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+<f:view>
+
+   
+    <head>
+        <title>you are pro</title>
+        <LINK href="estilo.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <h1>Bienvenido a you are a pro</h1>
+        <h:form id="index">
+            <h5>Sea parte de nuestra comunidad de Profesionales</h5>
+            <table class="tab"> 
+                <tr> 
+                    <th><label>Nombre</label> </th>   
+                    <th><h:inputText  immediate="true" required="true" requiredMessage="ingrese nombre" value="#{regController.persona.nombre}"/> </th>  
+                </tr> 
+                <tr>
+                    <th><label>Apellido</label></th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese apellido" value="#{regController.persona.apellido}"/> </th>
+                </tr>
+                <tr>
+                    <th><label>Correo electronico</label></th>
+                    <th><h:inputText  immediate="true" required="true" requiredMessage="ingrese correo" value="#{regController.usuario.correo}"/> </th>
+                    
+                </tr>
+                
+                  <tr>
+                    <th><label>Contraseña</label></th>
+                    <th><h:inputSecret  immediate="true" required="true" requiredMessage="ingrese contraseña" value="#{regController.usuario.contrasena}"/></th>
+                  </tr>
+                <tr>
+                    <th><label>Sexo M/F</label></th>
+                    <td><h:selectOneMenu id="idEmpresa" value="#{regController.persona.sexo}" title="sexo">
+                          <f:selectItems value="#{regController.listasexo()}"/>
+                          </h:selectOneMenu></td>
+                </tr>
+                  <tr>
+                    <th><label>Fecha de nacimiento dd/mm/aaaa</label></th>
+                    <th><h:inputText immediate="true" required="true" requiredMessage="ingrese fecha nacimiento" value="#{regController.persona.fechanac}">
+                        <f:convertDateTime pattern="dd/MM/yyyy"/></h:inputText></th>
+                </tr>
+                <tr>
+                    <th><label>¿Profesional?</label></th>
+                </tr>
+                
+                <tr>
+                    <th><label>Titulo universitario/terciario</label></th>
+                    <th><h:inputText value="#{regController.pro.titulo}"/> </th>
+                </tr>
+                       
+                <tr>
+                    <th> <h:commandButton  styleClass="boton" type="submit" action="#{regController.create}"/></th>
+                </tr>
+            </table><div  id="div-pro" >
+                <table class="tabAntec">
+                <tr>
+                    <th><label>Cursos</label></th>
+                    <th><h:inputTextarea value="#{regController.pro.cursos}"/> </th>
+                </tr>
+                <tr>
+                    <th><label>Idiomas</label></th>
+                    <th><h:inputTextarea value="#{regController.pro.idiomas}"/> </th>
+                </tr>
+                <tr>
+                    <th><label>Antecedentes laborales</label></th>
+                    <th><h:inputTextarea value="#{regController.pro.antecedentes}"/> </th>
+                </tr>
+                  
+            </table> </div>
+                <table class="tab2">
+                    <tr><th>
+                        <a href="faces/RegistroEmp.xhtml">Cree su perfil de empresa</a> 
+                    </th></tr>
+                </table>
+        </h:form>
+            <h:form>
+                <table class="tablogin">
+                    <tr>
+                        <th><label2>Correo electronico</label2></th>
+                        <th><label2>Contraseña</label2></th>
+                        
+                    </tr>   
+                    <tr>
+                        <th><label2><h:inputText immediate="true" required="true" requiredMessage="ingrese correo" styleClass="mail" value="#{usuariosController.selected.correo}"/></label2></th>
+                        <th><label2><h:inputSecret immediate="true" required="true" requiredMessage="ingrese contraseña" styleClass="contra" value="#{usuariosController.selected.contrasena}"/></label2></th>
+                        <th><h:commandButton styleClass="bot" type="submit" action="#{regController.redireccionar(usuariosController.selected.correo,usuariosController.selected.contrasena)}"/></th> 
+                    </tr>
+                </table>
+                     
+        </h:form>
+    </body>
+    </f:view>
+</html>
+

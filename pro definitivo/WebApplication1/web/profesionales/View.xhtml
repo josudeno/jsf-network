@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewProfesionalesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewProfesionalesLabel_titulo}"/>
+                    <h:outputText value="#{profesionalesController.selected.titulo}" title="#{bundle.ViewProfesionalesTitle_titulo}"/>
+                    <h:outputText value="#{bundle.ViewProfesionalesLabel_cursos}"/>
+                    <h:outputText value="#{profesionalesController.selected.cursos}" title="#{bundle.ViewProfesionalesTitle_cursos}"/>
+                    <h:outputText value="#{bundle.ViewProfesionalesLabel_idiomas}"/>
+                    <h:outputText value="#{profesionalesController.selected.idiomas}" title="#{bundle.ViewProfesionalesTitle_idiomas}"/>
+                    <h:outputText value="#{bundle.ViewProfesionalesLabel_idPersona}"/>
+                    <h:outputText value="#{profesionalesController.selected.idPersona}" title="#{bundle.ViewProfesionalesTitle_idPersona}"/>
+                    <h:outputText value="#{bundle.ViewProfesionalesLabel_personas}"/>
+                    <h:outputText value="#{profesionalesController.selected.personas}" title="#{bundle.ViewProfesionalesTitle_personas}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{profesionalesController.destroyAndView}" value="#{bundle.ViewProfesionalesDestroyLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="Edit" value="#{bundle.ViewProfesionalesEditLink}"/>
+                <br />
+                <h:commandLink action="#{profesionalesController.prepareCreate}" value="#{bundle.ViewProfesionalesCreateLink}" />
+                <br />
+                <h:commandLink action="#{profesionalesController.prepareList}" value="#{bundle.ViewProfesionalesShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ViewProfesionalesIndexLink}" action="/index" immediate="true" />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

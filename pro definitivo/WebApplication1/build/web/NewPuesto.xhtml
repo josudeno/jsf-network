@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+<f:view>
+    <head>
+        <title>Nuevo puesto</title>
+           <LINK href="estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h:form id="newpuesto">
+            <table class="newpuesto"> 
+                <tr> 
+                    <th><label>Puesto</label> </th>                       
+                    <th><h:inputText value="#{puestosController.selected.puesto}" immediate="true" required="true" requiredMessage="ingrese puesto"/> </th>
+                </tr> 
+                <tr>
+                    <th><label>Area</label></th>
+                    <th><h:inputText value="#{puestosController.selected.area}"  immediate="true" required="true" requiredMessage="ingrese area"/> </th>
+                </tr>
+                <tr>
+                    <th><label>idpuesto</label></th>
+                    <th><h:inputText disabled="true"  value="#{puestosController.selected.idPuesto}" /> </th>
+                </tr>
+                <tr>
+                     <th><label>Salario</label></th>
+                    <th><h:inputText value="#{puestosController.selected.salario}"/></th>
+                </tr>
+                 <tr>
+                     <th><label>Cantidad de puestos</label></th>
+                     <th><h:inputText value="#{puestosController.selected.disponible}"  immediate="true" required="true" requiredMessage="ingrese cantidad de puestos"/></th>
+                </tr>
+                <tr>
+                    <th><label>Descripcion</label></th>
+                    <th><h:inputTextarea value="#{puestosController.selected.descripcion}"/></th>
+                </tr>
+                  <tr>
+                    <th><label>Fecha dd/mm/yyyy</label></th>
+                    <th><h:inputText value="#{puestosController.selected.fecha}" immediate="true" required="true" requiredMessage="ingrese fecha">
+                        <f:convertDateTime pattern="dd/MM/yyyy"/></h:inputText></th>
+                </tr>
+                 <tr>
+                    <th><label>cuit</label></th>
+                    <th><h:inputText  disabled="true" value="#{puestosController.selected.idEmpresa}"/> </th>
+                </tr>
+                <tr> 
+                    <th> <h:commandButton styleClass="botCancelar" type="submit" action="#{puestosController.Cancel()}"/></th>
+                    <th> <h:commandButton styleClass="botGuardar" type="submit" action="#{puestosController.create()}"/></th>
+                </tr>
+            </table>
+                
+        </h:form>
+         
+    </body>
+    
+</f:view>
+</html>

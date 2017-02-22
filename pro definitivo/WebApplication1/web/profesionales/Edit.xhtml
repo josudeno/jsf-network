@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditProfesionalesTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditProfesionalesLabel_titulo}" for="titulo" />
+                    <h:inputText id="titulo" value="#{profesionalesController.selected.titulo}" title="#{bundle.EditProfesionalesTitle_titulo}" required="true" requiredMessage="#{bundle.EditProfesionalesRequiredMessage_titulo}"/>
+                    <h:outputLabel value="#{bundle.EditProfesionalesLabel_cursos}" for="cursos" />
+                    <h:inputTextarea rows="4" cols="30" id="cursos" value="#{profesionalesController.selected.cursos}" title="#{bundle.EditProfesionalesTitle_cursos}" />
+                    <h:outputLabel value="#{bundle.EditProfesionalesLabel_idiomas}" for="idiomas" />
+                    <h:inputTextarea rows="4" cols="30" id="idiomas" value="#{profesionalesController.selected.idiomas}" title="#{bundle.EditProfesionalesTitle_idiomas}" />
+                    <h:outputLabel value="#{bundle.EditProfesionalesLabel_idPersona}" for="idPersona" />
+                    <h:inputText id="idPersona" value="#{profesionalesController.selected.idPersona}" title="#{bundle.EditProfesionalesTitle_idPersona}" required="true" requiredMessage="#{bundle.EditProfesionalesRequiredMessage_idPersona}"/>
+                    <h:outputLabel value="#{bundle.EditProfesionalesLabel_personas}" for="personas" />
+                    <h:selectOneMenu id="personas" value="#{profesionalesController.selected.personas}" title="#{bundle.EditProfesionalesTitle_personas}" required="true" requiredMessage="#{bundle.EditProfesionalesRequiredMessage_personas}">
+                        <f:selectItems value="#{personasController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{profesionalesController.update}" value="#{bundle.EditProfesionalesSaveLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="View" value="#{bundle.EditProfesionalesViewLink}" immediate="true"/>
+                <br />
+                <h:commandLink action="#{profesionalesController.prepareList}" value="#{bundle.EditProfesionalesShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.EditProfesionalesIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

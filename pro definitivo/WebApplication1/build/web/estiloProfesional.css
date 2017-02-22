@@ -1,0 +1,241 @@
+
+.botEditar
+{
+    background-image: url(imagenes/botEditar.png);
+    width: 95px;
+    height: 25px;
+}
+.botinicio
+{
+    background-image: url(imagenes/botInicio.png);
+    width: 95px;
+    height: 25px;
+}
+.botBuscar
+{
+    width: 95px;
+    height: 25px; 
+    background-image: url(imagenes/botBuscar.png);
+}
+.botCancelar
+{
+    width:95px;
+    height: 25px;
+    background-image: url(imagenes/botCancelar.png);
+}
+.botGuardar
+{
+    width:95px;
+    height: 25px;
+    background-image: url(imagenes/botGuardar.png);
+}
+
+h8
+{
+    
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 10px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+.tabpro
+{
+    width:8cm; 
+    border:0 ;
+    position: absolute;
+    top: 8cm;
+    border-right-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: silver;
+    border-left-color: silver;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    text-align: left;
+    font-size: 12px;
+    font-family: Georgia,'Times New Roman',times,serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+body
+{
+    background-color: #cccccc;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12pt;
+    color: #000099;
+    background-image: url(imagenes/degra.gif);
+    overflow:auto
+}
+.tabtopright
+{
+    border:0;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    top: 2cm;
+    position: absolute;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #cccccc;
+    border-left-color: #cccccc;
+    border-bottom-color: #cccccc;
+    border-top-color: #cccccc;
+    font-size: 12px;
+    font-family: Georgia,'Times New Roman',times,serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    left: 19cm;
+}
+.tabtopright2
+{
+    border:0;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #cccccc;
+    border-left-color: #cccccc;
+    border-bottom-color: #cccccc;
+    border-top-color: #cccccc;
+    position: absolute;
+    top: 5cm;
+   font-size: 12px;
+    font-family: Georgia,'Times New Roman',times,serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    width: 8cm;
+    left: 19cm;
+}
+.tabfondo
+{
+    visibility: hidden;
+    width:100%;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    bottom: 1px;
+    position: fixed;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #cccccc;
+    border-left-color: #cccccc;
+    border-bottom-color: #cccccc;
+    border-top-color: #cccccc;
+    background-image: url(imagenes/degra.gif);
+    text-align: right;
+    font-size: 10px;
+}
+.tabmedio
+{
+    
+    font-size: 12px;
+    font-family: Georgia,'Times New Roman',times,serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    position: absolute;
+    top: 2cm;
+    left: 10cm;
+    border-right-color: silver;
+    border-left-color: silver;
+    border-bottom-color: silver;
+    border-top-color: silver;
+
+    width: 8cm;
+}
+.foto
+{
+    width:6cm; 
+    border:0 ;
+    position: absolute;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    top: 2cm;
+    border-right-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: silver;
+    border-left-color: silver;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    text-align: left;
+    height: 3px;
+}
+.tablavolver
+{
+    left: 1cm;
+    position: absolute;
+    top: 13cm;
+}
+.tablabus
+{
+    top: 12cm;
+    left: 1cm;
+    position: absolute;
+}
+.tabeditar
+{
+    position: fixed;
+    top: 4cm;
+    bottom: 3cm;
+}
+.tablaeditar
+{
+    top: 14cm;
+    left: 1cm;
+    position: absolute;
+}
+.div1
+{
+    
+    overflow:scroll;
+   
+    width: 27.9cm;
+    height: 30cm;
+}

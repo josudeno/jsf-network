@@ -1,0 +1,126 @@
+.columna
+{ 
+    visibility: collapse;
+    width: 1px;
+}
+
+
+.botVolver
+{
+    
+    background-image: url(imagenes/botVolver.png);
+     width: 95px;
+    height: 25px;
+}
+.div1
+{
+    overflow:scroll;
+    width: 27.9cm;
+    height: 30cm;
+   
+}
+.botBuscar
+{
+    width: 95px;
+    height: 25px; 
+    background-image: url(imagenes/botBuscar.png);
+}
+.tablavolver
+{
+    
+    top: 1px;
+    left: 22cm;
+    position: absolute;
+}
+    body 
+    {
+
+        background-color: #cccccc;
+        font-family: 'Lucida Sans Unicode';
+        font-size: 12pt;
+        color: orange;
+        background-image: url(imagenes/degra.gif);
+    }
+.puestos
+{
+    
+    position: absolute;
+    top: 5cm;
+    left: 10px;
+    
+    color: black;
+    text-align: center;
+}
+.div
+{
+    
+    width: 10cm;
+    height: 10cm;
+    background-color: purple;
+    
+  visibility: hidden;
+    position: absolute;
+}
+
+
+form.jsfcrud_list_form th, td th {
+    font-size: x-small;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #90b4bd;
+    border-right-color: #90b4bd;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 8px;
+    font-size: small;
+}
+
+form.jsfcrud_list_form td, td td {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #b2d5d6;
+    border-right-color: #b2d5d6;
+    vertical-align: baseline;
+    padding-bottom: 0px;
+}
+
+
+.header
+{
+    
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+form.filas
+{
+    
+    font-size: 12px;
+    color: #000000;
+}

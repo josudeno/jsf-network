@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateEmpresasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateEmpresasLabel_razon}" for="razon" />
+                    <h:inputText id="razon" value="#{empresasController.selected.razon}" title="#{bundle.CreateEmpresasTitle_razon}" required="true" requiredMessage="#{bundle.CreateEmpresasRequiredMessage_razon}"/>
+                    <h:outputLabel value="#{bundle.CreateEmpresasLabel_area}" for="area" />
+                    <h:inputText id="area" value="#{empresasController.selected.area}" title="#{bundle.CreateEmpresasTitle_area}" required="true" requiredMessage="#{bundle.CreateEmpresasRequiredMessage_area}"/>
+                    <h:outputLabel value="#{bundle.CreateEmpresasLabel_cuit}" for="cuit" />
+                    <h:inputText id="cuit" value="#{empresasController.selected.cuit}" title="#{bundle.CreateEmpresasTitle_cuit}" required="true" requiredMessage="#{bundle.CreateEmpresasRequiredMessage_cuit}"/>
+                    <h:outputLabel value="#{bundle.CreateEmpresasLabel_idPersona}" for="idPersona" />
+                    <h:inputText id="idPersona" value="#{empresasController.selected.idPersona}" title="#{bundle.CreateEmpresasTitle_idPersona}" required="true" requiredMessage="#{bundle.CreateEmpresasRequiredMessage_idPersona}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{empresasController.create}" value="#{bundle.CreateEmpresasSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{empresasController.prepareList}" value="#{bundle.CreateEmpresasShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.CreateEmpresasIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

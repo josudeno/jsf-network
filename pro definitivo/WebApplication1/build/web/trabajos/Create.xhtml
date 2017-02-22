@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateTrabajosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateTrabajosLabel_idPuesto}" for="idPuesto" />
+                    <h:inputText id="idPuesto" value="#{trabajosController.selected.idPuesto}" title="#{bundle.CreateTrabajosTitle_idPuesto}" required="true" requiredMessage="#{bundle.CreateTrabajosRequiredMessage_idPuesto}"/>
+                    <h:outputLabel value="#{bundle.CreateTrabajosLabel_cuit}" for="cuit" />
+                    <h:inputText id="cuit" value="#{trabajosController.selected.cuit}" title="#{bundle.CreateTrabajosTitle_cuit}" required="true" requiredMessage="#{bundle.CreateTrabajosRequiredMessage_cuit}"/>
+                    <h:outputLabel value="#{bundle.CreateTrabajosLabel_idProfesional}" for="idProfesional" />
+                    <h:inputText id="idProfesional" value="#{trabajosController.selected.idProfesional}" title="#{bundle.CreateTrabajosTitle_idProfesional}" required="true" requiredMessage="#{bundle.CreateTrabajosRequiredMessage_idProfesional}"/>
+                    <h:outputLabel value="#{bundle.CreateTrabajosLabel_fecha}" for="fecha" />
+                    <h:inputText id="fecha" value="#{trabajosController.selected.fecha}" title="#{bundle.CreateTrabajosTitle_fecha}" required="true" requiredMessage="#{bundle.CreateTrabajosRequiredMessage_fecha}">
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{trabajosController.create}" value="#{bundle.CreateTrabajosSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{trabajosController.prepareList}" value="#{bundle.CreateTrabajosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.CreateTrabajosIndexLink}" action="/index" immediate="true" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
